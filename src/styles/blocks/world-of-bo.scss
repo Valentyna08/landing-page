@@ -1,0 +1,45 @@
+.world-of-bo {
+  padding: 48px 20px;
+  @include pageGrid;
+  background-color: #fcfaef;
+  align-items: start;
+  margin-bottom: 64px;
+
+  @include onTablet {
+    padding: 120px 72px;
+    margin-bottom: 120px;
+  }
+
+  @include onDesktop {
+    padding: 120px;
+    margin-bottom: 120px;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 100%;
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: span 3;
+    }
+
+    @include onDesktop {
+      grid-column: span 6;
+    }
+  }
+
+  &__description {
+    grid-column: 1 / -1;
+    margin: 0;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+
+    @include onTablet {
+      grid-column: 4 / 6;
+    }
+    @include onDesktop {
+      grid-column: 8 / 12;
+    }
+  }
+}
